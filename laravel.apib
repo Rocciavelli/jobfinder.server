@@ -1,0 +1,36 @@
+FORMAT: 1A
+
+# jobfinder1 
+
+The BVI JobFinder API is the backbone application for https://www.bvijobfinder.com
+
+## Jobs Collection [/jobs]
+
+### Return a list of job posts. [GET]
+
++ Response 200 (application/json;charset=utf-8)
+
+        {
+            "jobs": [
+            {
+                "title": "T_1_front",
+                "body": "Lorem epson et al ...",
+                "salarypackage": "30000-50000",
+                "qualification": "certificate",
+                "industy": "tech",
+                "author": "admin",
+                "published_at": "Fri, 07 Jun 2013 10:35:28 +0000"
+            }]
+        }
+
+## User Collection [/user]
+### List Specific User [GET]
+
++ Response 200 (application/json;charset=utf-8)
+
+        {
+            "user": {
+                "name": "John Doe",
+                "age": 22
+            }
+        }
